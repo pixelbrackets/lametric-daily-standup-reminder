@@ -1,0 +1,9 @@
+{
+    "name": "pixelbrackets/lametric-daily-standup-reminder",
+    "description": "Send a reminder notification to all local LaMetric devices when the daily standup is due",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
