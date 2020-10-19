@@ -14,7 +14,8 @@ the daily standup is due.
 ## Vision
 
 The package is an example project for the
-[lametric-notification-broadcast](https://gitlab.com/pixelbrackets/lametric-notification-broadcast).
+[lametric-notification-broadcast](https://gitlab.com/pixelbrackets/lametric-notification-broadcast)
+package.
 
 Every day at a given time, a message is send to all LaMetric devices in a local
 network, to remind everybody that the daily standup is due.
@@ -30,6 +31,8 @@ That's the only feature of this package.
 
 Packagist Entry https://packagist.org/packages/pixelbrackets/lametric-daily-standup-reminder/
 
+- Add a cronjob, see »Usage«
+
 ## Source
 
 https://gitlab.com/pixelbrackets/lametric-daily-standup-reminder/
@@ -38,11 +41,12 @@ Mirror https://github.com/pixelbrackets/lametric-daily-standup-reminder/
 
 ## Usage
 
-1. Set up a cronjob pointing to `cron.php` and pass a URL to the broadcast
-   service, for example every day at ten o'clock with the service
-   available at `http://localhost.local`
+1. Set up a cronjob pointing to `cron.php` and pass a URL to the
+   [broadcast service](https://gitlab.com/pixelbrackets/lametric-notification-broadcast)
+   service, for example every day at ten o'clock with the service available
+   at `http://localhost.local/hook`
    ```bash
-   0 10 * * * LAMETRIC_DAILY_STANDUP_URL="http://localhost.local" php /var/www/lametric/cron.php > /dev/null 2>&1
+   0 10 * * * LAMETRIC_BROADCAST_URL="http://localhost.local/hook" php /var/www/lametric/cron.php > /dev/null 2>&1
    ```
 
 ## License

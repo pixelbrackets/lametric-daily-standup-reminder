@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $client = new \GuzzleHttp\Client();
 
-$requestUrl = getenv('LAMETRIC_DAILY_STANDUP_URL');
+$requestUrl = getenv('LAMETRIC_BROADCAST_URL');
 if (empty($requestUrl)) {
     die('Missing parameters');
 }
