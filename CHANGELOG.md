@@ -2,6 +2,12 @@
 
 2022-04-04 Dan Untenzu <mail@pixelbrackets.de>
 
+  * 3.0.0
+  * FEATURE Raise PHP version to 8.0 → Breaking Change
+    Use PHP 8.0 instead of 7.3
+
+2022-04-04 Dan Untenzu <mail@pixelbrackets.de>
+
   * 2.1.0
   * FEATURE Security update in dependencies
 
