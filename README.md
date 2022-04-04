@@ -25,7 +25,10 @@ That's the only feature of this package.
 ## Requirements
 
 - PHP
-- [LaMetric Notification Broadcast](https://gitlab.com/pixelbrackets/lametric-notification-broadcast)
+- Cron
+- An instance of the
+  [LaMetric Notification Broadcast](https://gitlab.com/pixelbrackets/lametric-notification-broadcast)
+  project
 
 ## Installation
 
